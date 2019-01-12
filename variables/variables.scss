@@ -1,0 +1,12 @@
+// Define a variable called color with a value of red, $ is how you define
+$color: red;
+
+ul {
+  font-size: 14px;
+  color: $color; // Use variable name
+}
+
+ol {
+  font-size: 18px;
+  color: $color; // Use variable name
+}
