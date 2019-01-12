@@ -1,0 +1,29 @@
+<!-- Adding a character before or after each list item-->
+
+<!DOCTYPE html>
+<html
+  <head>
+    <title>My Web Page!</title>
+
+
+    <!-- \21d2 is a specific character code; in this case an arrow-->
+    <!-- tjere are codes for all types of symbols such as emojis-->
+
+    <!-- a::before basically means before each link, I want to add this particular content-->
+    <!-- a::after is also an option-->
+    <style>
+        a::before {
+          content: "\21d2 Click here: ";
+          font-weight: bold
+        }
+    </style>
+
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">one link</a></li>
+      <li><a href="#">another link</a></li>
+      <li><a href="#">third link</a></li>
+    </ul>
+  </body>
+</html>
