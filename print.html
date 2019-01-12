@@ -1,0 +1,31 @@
+<!-- Altering what shows up on a webpage in certain situations such as printing teh webpage -->
+
+<!DOCTYPE html>
+<html
+  <head>
+    <title>My Web Page!</title>
+
+    <!-- @media means create a media query, meaning I want to apply CSS styling, but only in particular situations-->
+    <!-- In this example we are saying to only apply when printing -->
+
+    <!-- .screen only mean take anything with class name .screen-only and set its display property to none (Not visible)-->
+
+
+    <style>
+
+        @media print {
+          .screen-only {
+              display: none;
+          }
+        }
+
+    </style>
+
+
+    <!--<p class="screen-only"> Will ONLY show up on computer screens -->
+  </head>
+  <body>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <p class="screen-only">This paragraph wont appear when you print</p>
+</html>
