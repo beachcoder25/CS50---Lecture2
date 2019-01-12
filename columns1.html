@@ -1,0 +1,31 @@
+<!-- Allows defining how to rezie on a small screen vs a large screen-->
+
+<!-- bootstrap is very mobile responsive, has re-sizing hard-coded into it for this example -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web Page!</title>
+
+        <!-- Linking to a style sheet available on the internet-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style>
+            .row > div {
+              padding: 20px;
+              background-color: teal;
+              border: 2px solid black;
+            }
+          </style>
+        </head>
+        <body>
+          <div class="container">
+
+              <!-- In bootstrap, a row is divided into 12 columns -->
+              <div class="row">
+
+                  <!-- col-lg-3 col-sm-6 on a large screen take up 3 columns, but on a small screen take up 6 of 12 columns-->
+                  <div class="col-lg-3 col-sm-6">This is a section</div>
+                  <div class="col-lg-3 col-sm-6">This is another section</div>
+                  <div class="col-lg-3 col-sm-6">This is the 3rd section</div>
+                  <div class="col-lg-3 col-sm-6">This is the 4th section</div>
+        </body>
+  </html>
