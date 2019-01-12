@@ -1,0 +1,37 @@
+<!-- Changing the content (text, image, etc..) based on how wide or how narrow a web page is -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web Page!</title>
+
+        <!-- Viewport is visible area of screen -->
+        <!-- Adjusted to if fits scale of the device -->
+        <!-- Helps prevent text from appearing too small on a smaller screen -->
+        
+        <!-- This line is CRUCIAL to a properly formatted mobile web page-->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <style>
+            @media (min-width: 500px) {
+                h1::before {
+                    content: "Welcome to My Web Page!";
+                }
+            }
+
+            @media (max-width: 499px) {
+                h1::before {
+                    content: "Welcome!";
+                }
+            }
+        </style>
+    </head>
+    <body>
+
+          <!-- EMPTY h1 TAGS for this!!!-->
+        <h1></h1>
+
+    </body>
+</html>
